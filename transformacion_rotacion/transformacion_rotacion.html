@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Transform_rotate</title>
+  <style>
+     /* TRANSFORMACIONES */
+     body{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100 vh;
+       color: white;
+       font-family: Arial, Helvetica, sans-serif;
+     }
+
+     .cuadrado{
+       width: 200px;
+       height: 200px;
+       background: #7dc900;
+       margin: 20px;
+      transition: 1.3s;
+     }
+     .container{
+       border: 1px solid red;
+       }
+     .container:hover .cuadrado{
+      /* transform: rotate(-45deg); */
+      /* transform: rotateX(45deg); */
+      /* transform: rotateY(45deg); */
+      /* transform: rotateZ(45deg); */
+      transform:rotateX(45deg)rotateY(45deg) rotateZ(45deg);
+      /* transform: rotate3d(x,y,z,rotate) */
+      /* transform: rotate3d(1,0,0,45deg); EJEX */
+      /* transform: rotate3d(0,1,0,45deg); EJEY */
+      /* transform: rotate3d(0,0,1,45deg); EJEZ */
+      }
+
+  </style> 
+</head>
+<body>
+ 
+  </div>
+   -->
+  <div class="container">
+    <div class="cuadrado">Hola Mundo</div>
+  </div>
+</body>
+</html>

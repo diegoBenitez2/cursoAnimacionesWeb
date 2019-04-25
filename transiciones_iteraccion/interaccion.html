@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Transitions</title>
+  <style>
+    .pelota{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: red;
+      /* transition-property: height; */
+      /* transition-duration: 1s; */
+      /* transition-delay: 1s; */
+      /* transition-timing-function: ease; */
+      transition: all 1s ;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+      
+    .pelota.a{
+      background-color: red;
+      left: 0;
+    }
+    .pelota.b{
+      background-color: blue;
+      right: 0;
+    }
+    .pelota.c{
+      background-color:transparent;
+      left: calc(50% - 50px);
+      
+    
+
+    }
+    .canasta{
+      position: relative;
+      border: 1px solid red;
+      height: 100px;
+      widows: 100%;
+    }
+    .canasta:hover .pelota.a{
+      left: calc(50% - 50px);
+      background-color: transparent;
+    }
+    .canasta:hover .pelota.b{
+      right: calc(50% - 50px);
+      background-color: transparent;
+
+    }
+    .canasta:hover .pelota.c{
+      background-color: magenta;
+      transition-delay: .7s;
+
+
+    }
+
+  </style> 
+</head>
+<body>
+  <div class="canasta">
+  <div class="pelota a "></div>
+  <div class="pelota b "></div>
+  <div class="pelota c"></div>
+  <!-- <div class="pelota c"></div> -->
+
+  </div>
+
+</body>
+</html>
